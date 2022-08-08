@@ -19,7 +19,7 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro>
-            <span className="font-mono">Tech.</span>
+            <span className="font-mono">News.</span>
           </Intro>
           <section className="max-w-4xl mx-auto">
             Here I sometimes write about my tech experience.
