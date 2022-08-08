@@ -8,9 +8,9 @@ export default function Index({ content }) {
   return (
     <>
       <Layout>
-        <Head>
+        {/* <Head>
           <title>Blog</title>
-        </Head>
+        </Head> */}
         <Container>
           <Intro />
           <SelfIntro/>

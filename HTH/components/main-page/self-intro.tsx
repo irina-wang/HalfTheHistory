@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 export default function SelfIntro() {
   return <section className={styles.markdown + " max-w-2xl pb-2 md:pb-0"}>
+
+    <h1>There should be a big banner here</h1>
     <p>Hi There. My name is Yichen Wei.</p>
     <p>
       I am a junior in college studying computer science at {" "}

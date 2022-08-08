@@ -1,4 +1,6 @@
 import Container from '../components/container'
+// import MoreStories from '../components/more-stories'
+// import HeroPost from '../components/hero-post'
 import Intro from '../components/main-page/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
@@ -17,10 +19,10 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro>
-            <i>Life.</i>
+            <span className="font-mono">Tech.</span>
           </Intro>
           <section className="max-w-4xl mx-auto">
-            Here is the section for life
+            Here I sometimes write about my tech experience.
             <ArticleList articles={allPosts}/>
           </section>
         </Container>
@@ -30,7 +32,7 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts('life', [
+  const allPosts = getAllPosts('tech', [
     'title',
     'date',
     'slug',

@@ -14,15 +14,15 @@ export default function Index({ allPosts }) {
   return (
     <>
       <Layout>
-        <Head>
+        {/* <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
-        </Head>
+        </Head> */}
         <Container>
           <Intro>
-            <span className="font-mono">Tech.</span>
+            <span className="font-mono">Tell Her Story.</span>
           </Intro>
           <section className="max-w-4xl mx-auto">
-            Here I sometimes write about my tech experience.
+            Here is where all the stories go
             <ArticleList articles={allPosts}/>
           </section>
         </Container>
