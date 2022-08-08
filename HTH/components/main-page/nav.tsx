@@ -18,11 +18,10 @@ function shouldHighLight(path: string, navinfo: NavInfo) {
 
 const link_list: NavInfo[] = [
   {href: "/", title: "home"},
-  // {href: "/tech", title: "tech", is_prefix: true},
-  // {href: "/life", title: "life", is_prefix: true},
   {href: "/news", title: "news", is_prefix: true},
   {href: "/podcast", title: "podcast", is_prefix: true},
   {href: "/playlist", title: "playlist", is_prefix: true},
+  {href: "/connect", title: "connect", is_prefix: true},
   {href: "/tellherstory", title: "tellherstory", is_prefix: true},
 ]
 
