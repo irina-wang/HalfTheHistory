@@ -6,7 +6,7 @@
  */
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faInstagram,faTwitter, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faInstagram,faTwitter, faFacebook, faTiktok, faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 import styles from './social-media.module.css';
 
@@ -21,6 +21,9 @@ export default function SocialMedia() {
     </a>
     <a href="https://www.facebook.com/fivesistersfilm">
       <FontAwesomeIcon icon={faFacebook}/>
+    </a>
+    <a href="https://www.youtube.com/c/fivesistersfilms">
+      <FontAwesomeIcon icon={faYoutube}/>
     </a>
     <a href="/">
       <FontAwesomeIcon icon={faTiktok}/>
