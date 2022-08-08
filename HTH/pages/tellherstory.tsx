@@ -1,7 +1,6 @@
 import Container from '../components/container'
-// import MoreStories from '../components/more-stories'
-// import HeroPost from '../components/hero-post'
 import Intro from '../components/main-page/intro'
+import Form from '../components/submit/form'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
@@ -18,10 +17,9 @@ export default function Index({ allPosts }) {
           <Intro>
             <span className="font-mono">Tell Her Story.</span>
           </Intro>
-          <section className="max-w-4xl mx-auto">
-            Here is where all the stories go
-            This is suppose to be a form 
-            <ArticleList articles={allPosts}/>
+          <section className="max-w-7xl mx-auto">
+          <Form/>
+            {/* <ArticleList articles={allPosts}/> */}
           </section>
         </Container>
       </Layout>
