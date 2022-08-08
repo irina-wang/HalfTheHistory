@@ -1,19 +1,29 @@
+/**
+ * Social media in the footer. All reference link to { Five sisters Production }
+ * 
+ * TODO: find Tik Tok
+ * 
+ */
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faInstagram,faTwitter, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 import styles from './social-media.module.css';
-import { DevpostLogo } from './devpost-logo';
 
 export default function SocialMedia() {
   return <div className={styles.socialMedia}>
-    <a href="https://github.com/waymao/">
-      <FontAwesomeIcon icon={faGithub}/>
+    {/* Five sisters Production */}
+    <a href="https://www.instagram.com/fivesistersproductions/">
+      <FontAwesomeIcon icon={faInstagram}/>
     </a>
-    <a href="https://www.linkedin.com/in/yichen-wei-556349141/">
-      <FontAwesomeIcon icon={faLinkedin}/>
+    <a href="https://twitter.com/fivesistersfilm">
+      <FontAwesomeIcon icon={faTwitter}/>
     </a>
-    <a href="https://devpost.com/waymao">
-      {DevpostLogo}
+    <a href="https://www.facebook.com/fivesistersfilm">
+      <FontAwesomeIcon icon={faFacebook}/>
+    </a>
+    <a href="/">
+      <FontAwesomeIcon icon={faTiktok}/>
     </a>
   </div>
 }
