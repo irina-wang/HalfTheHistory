@@ -22,7 +22,7 @@ const link_list: NavInfo[] = [
   {href: "/podcast", title: "podcast", is_prefix: true},
   {href: "/playlist", title: "playlist", is_prefix: true},
   {href: "/connect", title: "connect", is_prefix: true},
-  {href: "/tellherstory", title: "tellherstory", is_prefix: true},
+  {href: "/tellherstory", title: "Tell Her Story", is_prefix: true},
 ]
 
 export default function nav() {
