@@ -1,8 +1,9 @@
 /**
- * Section for banner on the landing page 
+ * Section to submit stories on Tell Her story page 
  * 
- * TODO: create a actual banner
- *      image size: 2000*800
+ * TODO: 
+ *   1. confirm areas, database
+ *   2. implement onSubmit function 
  */
 
 import styles from '../markdown-styles.module.css';
