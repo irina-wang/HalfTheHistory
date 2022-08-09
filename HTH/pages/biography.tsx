@@ -19,11 +19,10 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro>
-            <span className="font-mono">Podcast.</span>
+            <span className="font-mono">Biography.</span>
           </Intro>
           <section className="max-w-4xl mx-auto">
-            Place to host all the podcast
-            Yet to come
+            Yet to implement - place to hold all the stories
             <ArticleList articles={allPosts}/>
           </section>
         </Container>

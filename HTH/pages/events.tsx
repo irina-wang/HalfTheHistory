@@ -19,11 +19,10 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro>
-            <span className="font-mono">Podcast.</span>
+            <span className="font-mono">Events.</span>
           </Intro>
           <section className="max-w-4xl mx-auto">
-            Place to host all the podcast
-            Yet to come
+            yet to come
             <ArticleList articles={allPosts}/>
           </section>
         </Container>
@@ -33,7 +32,7 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts('tech', [
+  const allPosts = getAllPosts('events', [
     'title',
     'date',
     'slug',
