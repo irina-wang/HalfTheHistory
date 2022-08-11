@@ -7,7 +7,36 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import ArticleList from '../components/article-list/article-list'
-import Member from '../components/main-page/memberM'
+import Members from '../components/main-page/members'
+
+import profileImg from '../public/assets/img/profile/profile.jpg';
+
+const peopleInfo = [
+  {
+    name: 'AA',
+    email: 'AA.com',
+    intro: 'here is a brief intro',
+    image: profileImg,
+  },
+  {
+    name: 'BB',
+    email: 'BB@tufts.com',
+    intro: 'here is a brief intro',
+    image: profileImg,
+  },
+  {
+    name: 'AA',
+    email: 'AA.com',
+    intro: 'here is a brief intro',
+    image: profileImg,
+  },
+  {
+    name: 'DD',
+    email: 'DD@tufts.com',
+    intro: 'here is a brief intro',
+    image: profileImg,
+  },
+]
 
 
 export default function Index({ allPosts }) {
@@ -22,7 +51,7 @@ export default function Index({ allPosts }) {
           </Intro>
           <section className="max-w-4xl mx-auto">
             Add a section about HTH
-            <Member/>
+            <Members people={peopleInfo}/>
             introoduction of the members
             {/* <ArticleList articles={allPosts}/> */}
           </section>
