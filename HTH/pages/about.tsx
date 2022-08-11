@@ -1,3 +1,12 @@
+/**
+ * Section for the about page with organization intro & member info
+ * 
+ * TODO: 
+ *  1. put in actual member info (remeber to change image path)
+ * 
+ */
+
+
 import Container from '../components/container'
 // import MoreStories from '../components/more-stories'
 // import HeroPost from '../components/hero-post'
@@ -10,6 +19,7 @@ import ArticleList from '../components/article-list/article-list'
 import Members from '../components/main-page/members'
 
 import profileImg from '../public/assets/img/profile/profile.jpg';
+import AboutUs from '../components/main-page/aboutus'
 
 const peopleInfo = [
   {
@@ -40,8 +50,6 @@ const peopleInfo = [
 
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
   return (
     <>
       <Layout>
@@ -49,11 +57,9 @@ export default function Index({ allPosts }) {
           <Intro>
             <span className="font-mono">About Us.</span>
           </Intro>
-          <section className="max-w-4xl mx-auto">
-            Add a section about HTH
+          <section className="max-w-5xl mx-auto">
+            <AboutUs/>
             <Members people={peopleInfo}/>
-            introoduction of the members
-            {/* <ArticleList articles={allPosts}/> */}
           </section>
         </Container>
       </Layout>
@@ -61,17 +67,4 @@ export default function Index({ allPosts }) {
   )
 }
 
-export async function getStaticProps() {
-  const allPosts = getAllPosts('tech', [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
 
-  return {
-    props: { allPosts },
-  }
-}

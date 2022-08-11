@@ -1,10 +1,3 @@
-/**
- * Section for banner on the landing page 
- * 
- * TODO: make member props & components 
- * 
- */
-
 import styles from '../markdown-styles.module.css';
 
 import Image from 'next/image';
@@ -36,16 +29,16 @@ function Member({person}) {
 }
 
 export default function Members({people}) {
-    return <section className={styles.markdown + " max-w-full pb-2 md:pb-0"}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
+    return <section className={styles.markdown + " max-w-full pb-0 md:pb-0"}>
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
+      {/* <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none"> */}
         <h2 className="text-center text-2xl font-extrabold text-gray-900">Members</h2>
         
       <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
         {people.map((person) => <Member person={person}/>)}
           </div>
-      </div>
-    </div>
+      {/* </div> */}
+    {/* </div> */}
     </section>
 }
 
