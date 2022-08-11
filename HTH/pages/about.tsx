@@ -7,6 +7,8 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import ArticleList from '../components/article-list/article-list'
+import Member from '../components/main-page/member'
+
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0]
@@ -20,6 +22,7 @@ export default function Index({ allPosts }) {
           </Intro>
           <section className="max-w-4xl mx-auto">
             Add a section about HTH
+            <Member/>
             introoduction of the members
             {/* <ArticleList articles={allPosts}/> */}
           </section>
