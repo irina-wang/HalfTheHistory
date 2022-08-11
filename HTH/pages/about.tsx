@@ -7,7 +7,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import ArticleList from '../components/article-list/article-list'
-import Member from '../components/main-page/member'
+import Member from '../components/main-page/memberM'
 
 
 export default function Index({ allPosts }) {
