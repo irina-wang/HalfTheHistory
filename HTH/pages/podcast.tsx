@@ -21,10 +21,15 @@ export default function Index({ allPosts }) {
           <Intro>
             <span className="font-mono">Podcast.</span>
           </Intro>
-          <section className="max-w-4xl mx-auto">
-            Place to host all the podcast
-            Yet to come
-            <ArticleList articles={allPosts}/>
+          <section className="max-w-4xl mx-auto space-y-5">
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396618063&color=%231a1a1a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396618063&color=%231a1a1a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396618063&color=%231a1a1a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396618063&color=%231a1a1a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
           </section>
         </Container>
       </Layout>
