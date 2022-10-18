@@ -17,9 +17,16 @@ export default function Banner() {
       layout="responsive"
       width={2000}
       height={800}/>
-    <p>
-      For·got·ten in the past, cel·e·bra·ted in the future. 
-    {/* The trailer to our latest film from Half the History -- our series on under-told stories of diverse women in US history -- is here! Named one of the top breakout stars of the year by the New York Times just before the pandemic, choreographer Ayodele Casel creates work inspired by the history of Black tap dancers who came before her. Click the link in our bio to see the trailer! #HalfTheHistory #TellHerStory #FiveSistersProductions */}
-    </p>
+   
+  <blockquote className="text-4xl font-semibold italic text-center text-slate-900">
+    <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+      <span className="relative text-white">Forgotten</span>
+    </span>
+      in the past,
+    <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+    <span className="relative text-white">celebrated</span>
+    </span>
+      in the future.
+  </blockquote>
   </section>
 }

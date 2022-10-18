@@ -18,34 +18,36 @@ import { CMS_NAME } from '../lib/constants'
 import ArticleList from '../components/article-list/article-list'
 import Members from '../components/main-page/members'
 
-import profileImg from '../public/assets/img/profile/profile.jpg';
+import JBImg from '../public/assets/img/profile/JenniferBurton.jpeg';
+import JDImg from '../public/assets/img/profile/JulieDobrow.jpeg';
 import AboutUs from '../components/main-page/aboutus'
 
 const peopleInfo = [
   {
-    name: 'AA',
-    email: 'AA.com',
+    name: 'Jennifer Burton',
+    email: 'jennifer.burton@tufts.edu',
     intro: 'here is a brief intro',
-    image: profileImg,
+    image: JBImg,
   },
   {
-    name: 'BB',
-    email: 'BB@tufts.com',
+    name: 'Julie Dobrow',
+    email: 'julie.dobrow@tufts.edu',
     intro: 'here is a brief intro',
-    image: profileImg,
+    image: JDImg,
   },
-  {
-    name: 'AA',
-    email: 'AA.com',
-    intro: 'here is a brief intro',
-    image: profileImg,
-  },
-  {
-    name: 'DD',
-    email: 'DD@tufts.com',
-    intro: 'here is a brief intro',
-    image: profileImg,
-  },
+  
+  // {
+  //   name: 'AA',
+  //   email: 'AA.com',
+  //   intro: 'here is a brief intro',
+  //   image: profileImg,
+  // },
+  // {
+  //   name: 'DD',
+  //   email: 'DD@tufts.com',
+  //   intro: 'here is a brief intro',
+  //   image: profileImg,
+  // },
 ]
 
 
