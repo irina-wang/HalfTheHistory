@@ -6,6 +6,8 @@ import Head from 'next/head'
 import Tools from '../components/main-page/tools'
 import Events from '../components/main-page/events'
 import Banner from '../components/main-page/banner'
+import AboutUs from '../components/main-page/aboutus'
+
 
 export default function Index({ content }) {
   return (
@@ -17,10 +19,9 @@ export default function Index({ content }) {
         <Container>
           <Intro />
           <Banner />
+          <AboutUs/>
           <Tools/>
           <Events/>
-          {/* <Events/>
-          <SelfIntro/> */}
         </Container>
       </Layout>
     </>
